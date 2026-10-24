@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">EduPlatform</div>
+        <div class="user-profile">
+            <span id="progress-text">0% Completed</span>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <div class="avatar">U</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar for Course Modules -->
+        <aside class="sidebar">
+            <h2>Course Content</h2>
+            <ul id="lesson-list" class="lesson-list">
+                <!-- Lessons will be injected here by JavaScript -->
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            <div class="video-container" id="video-container">
+                <h2 id="lesson-title">Select a lesson to begin</h2>
+                <div class="video-placeholder" id="video-player">
+                    <p>▶ Play Video</p>
+                </div>
+            </div>
+            
+            <div class="lesson-details">
+                <h3 id="lesson-subtitle">Overview</h3>
+                <p id="lesson-description">Click on any lesson from the sidebar to view the course material and video.</p>
+                <button id="complete-btn" class="btn primary-btn" disabled>Mark as Complete</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
